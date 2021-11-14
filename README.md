@@ -1,5 +1,5 @@
 # Projectle Montion
-Calculating and drawing projectle montion based on user input in script. For now avaliable is only calculate projectle montion. All this script is based on [projectle montion on wikipedia](https://en.wikipedia.org/wiki/Projectile_motion).
+Calculating and drawing projectle montion based on user input. For now avaliable is only calculate projectle montion. All this script is based on [projectle montion on wikipedia](https://en.wikipedia.org/wiki/Projectile_motion).
 
 ## To Do
 - [ ] Allow user to input data directly from commandline 

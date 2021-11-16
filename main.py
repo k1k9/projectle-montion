@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 import math
+import argparse
 
-
+parser = argparse.ArgumentParser()
+parser.add_argument("ANGLE", help="The angle at which the projectale was fired", type=float)
+parser.add_argument("SPEED", help="The speed at which the projectale was fired", type=float)
+parser.add_argument("-g", help="Gravitational accelration spped in. Default is 9.8067 m/s^2", default=9.8067, type=float)
+parser.add_argument("-y", help="The starting height of the projectale in meters. Default is 0",default=0, type=float)
+args = parser.parse_args()
 
 def projectleMotion(o: float, v: float, g: float = 9.8067, y: float = 0) -> tuple:
     """ Calculating ballistic curve based on:
@@ -33,10 +39,5 @@ def projectleMotion(o: float, v: float, g: float = 9.8067, y: float = 0) -> tupl
 
 
 if __name__ == '__main__':
-    angle = 32
-    speed = 50
-    gravity = 10
-    y = 200 # Starting height in meters
-    # x-traveled distance in meters and t-time in seconds
-    x,t = projectleMotion(angle, speed, gravity, y) 
+    x,t = projectleMotion(args.ANGLE, args.SPEED, args.g, args.y) 
     print(f'Traveled distance: {round(x,2)}m\nTime of traveled distance: {round(t,2)}s')

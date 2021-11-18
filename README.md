@@ -3,7 +3,6 @@ Calculating and drawing projectle montion based on user input. For now avaliable
 
 ## To Do
 - [x] Allow user to input data directly from commandline 
-- [ ] Draw projectle montion in Matplotlib
 
 ## Requrements
 I been testing this script on WSL2 Ubuntu 20 and if you have error like this:
